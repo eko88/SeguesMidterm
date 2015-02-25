@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ssy-sj-UfO">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Segues" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,412 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gom-cY-f0l">
+                                <rect key="frame" x="273" y="525" width="55" height="30"/>
+                                <state key="normal" title="Tap Me!">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pia-OX-CAn" kind="show" id="yEt-vG-pGe"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7hJ-Rv-oI3">
+                                <rect key="frame" x="234" y="300" width="133" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="G5S-lY-DCR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Some Data" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5L-t9-OhK">
+                                <rect key="frame" x="235" y="246" width="131" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ViewController 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cc1-WS-FkQ">
+                                <rect key="frame" x="237" y="70" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cc1-WS-FkQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="6" id="44t-9c-RZ2"/>
+                            <constraint firstItem="gom-cY-f0l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YCQ-xO-cFL"/>
+                            <constraint firstItem="q5L-t9-OhK" firstAttribute="centerX" secondItem="Cc1-WS-FkQ" secondAttribute="centerX" id="a3D-Xp-Sci"/>
+                            <constraint firstItem="gom-cY-f0l" firstAttribute="centerX" secondItem="7hJ-Rv-oI3" secondAttribute="centerX" id="j1f-ue-ehx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gom-cY-f0l" secondAttribute="bottom" constant="45" id="mas-Fe-dKh"/>
+                            <constraint firstItem="7hJ-Rv-oI3" firstAttribute="top" secondItem="q5L-t9-OhK" secondAttribute="bottom" constant="33" id="ocY-a5-u2p"/>
+                            <constraint firstItem="q5L-t9-OhK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="246" id="q5V-eG-df8"/>
+                            <constraint firstItem="q5L-t9-OhK" firstAttribute="centerX" secondItem="7hJ-Rv-oI3" secondAttribute="centerX" id="sM4-cm-Ar2"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Q4G-o7-YLX"/>
+                    <connections>
+                        <outlet property="data" destination="7hJ-Rv-oI3" id="r3Y-bd-40q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1184" y="329"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="Mmn-Gj-qgJ">
+            <objects>
+                <viewController id="pia-OX-CAn" customClass="secondVC" customModule="Segues" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GWu-CX-xZR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yqb-Nm-Mnv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sbm-eH-h4h">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkS-4S-4xN">
+                                <rect key="frame" x="273" y="540" width="55" height="30"/>
+                                <state key="normal" title="Tap Me!">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="arT-Tg-zsQ" kind="popoverPresentation" identifier="popover" popoverAnchorView="rkS-4S-4xN" id="U3B-fg-Xez">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5S-i0-e55">
+                                <rect key="frame" x="230" y="284" width="140" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="ebf-nQ-oST"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ViewController 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wex-Oe-7dd">
+                                <rect key="frame" x="237" y="72" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wex-Oe-7dd" firstAttribute="centerX" secondItem="sbm-eH-h4h" secondAttribute="centerX" id="GUQ-m5-Baz"/>
+                            <constraint firstItem="rkS-4S-4xN" firstAttribute="centerX" secondItem="o5S-i0-e55" secondAttribute="centerX" id="Lcb-A3-Mwj"/>
+                            <constraint firstItem="o5S-i0-e55" firstAttribute="top" secondItem="sbm-eH-h4h" secondAttribute="top" constant="284" id="OSm-aD-Zhx"/>
+                            <constraint firstItem="o5S-i0-e55" firstAttribute="centerX" secondItem="Wex-Oe-7dd" secondAttribute="centerX" id="ad4-3Q-8nl"/>
+                            <constraint firstItem="Wex-Oe-7dd" firstAttribute="top" secondItem="GWu-CX-xZR" secondAttribute="bottom" constant="8" symbolic="YES" id="b61-zW-Wrf"/>
+                            <constraint firstItem="Yqb-Nm-Mnv" firstAttribute="top" secondItem="rkS-4S-4xN" secondAttribute="bottom" constant="30" id="yjw-HM-nBY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataLabel" destination="o5S-i0-e55" id="XGa-Rl-zZv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YGT-BO-IwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1922" y="329"/>
+        </scene>
+        <!--ThirdVC-->
+        <scene sceneID="4lA-at-pW9">
+            <objects>
+                <viewController id="arT-Tg-zsQ" customClass="thirdVC" customModule="Segues" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OJv-MN-74B"/>
+                        <viewControllerLayoutGuide type="bottom" id="wIO-cZ-JWg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m5i-fz-C4g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eM-FU-EHo">
+                                <rect key="frame" x="268" y="285" width="64" height="30"/>
+                                <state key="normal" title="Go Back!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ezg-XG-iL3" kind="unwind" unwindAction="unwindSeguePopOver:" id="nzK-05-tP5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wf-n0-X0m">
+                                <rect key="frame" x="273" y="550" width="55" height="30"/>
+                                <state key="normal" title="Tap Me!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wuD-Nk-thn" kind="presentation" modalPresentationStyle="formSheet" modalTransitionStyle="partialCurl" id="erT-T6-VKb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8W-K7-r5m">
+                                <rect key="frame" x="235" y="78" width="131" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="8Wf-n0-X0m" secondAttribute="bottom" constant="20" symbolic="YES" id="9Gd-zC-rWC"/>
+                            <constraint firstItem="5eM-FU-EHo" firstAttribute="top" secondItem="m5i-fz-C4g" secondAttribute="top" constant="284" id="J76-vo-FdT"/>
+                            <constraint firstItem="B8W-K7-r5m" firstAttribute="top" secondItem="OJv-MN-74B" secondAttribute="bottom" constant="58" id="T7Z-Ko-0e5"/>
+                            <constraint firstItem="5eM-FU-EHo" firstAttribute="centerX" secondItem="8Wf-n0-X0m" secondAttribute="centerX" id="XIX-Lm-Mtc"/>
+                            <constraint firstItem="B8W-K7-r5m" firstAttribute="centerX" secondItem="5eM-FU-EHo" secondAttribute="centerX" id="Zsc-zo-Ptp"/>
+                            <constraint firstItem="B8W-K7-r5m" firstAttribute="centerX" secondItem="m5i-fz-C4g" secondAttribute="centerX" id="oPZ-M6-Y79"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <exit id="ezg-XG-iL3" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X0t-iF-aOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2583" y="328"/>
+        </scene>
+        <!--FourthVC-->
+        <scene sceneID="D4T-8p-0F8">
+            <objects>
+                <viewController id="wuD-Nk-thn" customClass="fourthVC" customModule="Segues" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GG0-xu-3oK"/>
+                        <viewControllerLayoutGuide type="bottom" id="qOm-fo-3QC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nw0-Wu-Af7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5RO-DS-ox3">
+                                <rect key="frame" x="273" y="550" width="55" height="30"/>
+                                <state key="normal" title="Tap Me!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="F8v-fg-szd" kind="presentation" modalPresentationStyle="pageSheet" modalTransitionStyle="flipHorizontal" id="HNA-j1-7E1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frd-UM-3Qm">
+                                <rect key="frame" x="268" y="285" width="64" height="30"/>
+                                <state key="normal" title="Go Back!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SlM-cx-5mo" kind="unwind" unwindAction="unwindSegueModal1:" id="YOs-bo-o3l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87S-ac-7FE">
+                                <rect key="frame" x="235" y="74" width="131" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="frd-UM-3Qm" firstAttribute="centerX" secondItem="87S-ac-7FE" secondAttribute="centerX" id="3yE-EU-blE"/>
+                            <constraint firstItem="frd-UM-3Qm" firstAttribute="centerX" secondItem="5RO-DS-ox3" secondAttribute="centerX" id="FKw-W2-Unw"/>
+                            <constraint firstItem="frd-UM-3Qm" firstAttribute="centerY" secondItem="nw0-Wu-Af7" secondAttribute="centerY" id="IO5-6X-qGd"/>
+                            <constraint firstItem="5RO-DS-ox3" firstAttribute="centerX" secondItem="nw0-Wu-Af7" secondAttribute="centerX" id="Miq-hJ-nxc"/>
+                            <constraint firstItem="87S-ac-7FE" firstAttribute="top" secondItem="GG0-xu-3oK" secondAttribute="bottom" constant="74" id="Nzw-Es-qa8"/>
+                            <constraint firstAttribute="bottom" secondItem="5RO-DS-ox3" secondAttribute="bottom" constant="20" symbolic="YES" id="cBI-Te-iDh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4yb-LV-lWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="SlM-cx-5mo" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3281" y="329"/>
+        </scene>
+        <!--SeventhVC-->
+        <scene sceneID="2dT-8Z-1fn">
+            <objects>
+                <viewController id="Ci7-1I-Cpg" customClass="seventhVC" customModule="Segues" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DeF-ho-dZd"/>
+                        <viewControllerLayoutGuide type="bottom" id="egU-pr-f2z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z3M-RW-jkG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyH-uc-emu">
+                                <rect key="frame" x="273" y="550" width="55" height="30"/>
+                                <state key="normal" title="Tap Me!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="jyB-ut-Lwr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFA-NP-nys">
+                                <rect key="frame" x="268" y="285" width="64" height="30"/>
+                                <state key="normal" title="Go Back!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gxr-qs-ZSc" kind="unwind" unwindAction="unwindSegueModal4:" id="dO0-zQ-iMp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller 7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMp-Ym-u7C">
+                                <rect key="frame" x="235" y="74" width="131" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="oyH-uc-emu" firstAttribute="centerX" secondItem="z3M-RW-jkG" secondAttribute="centerX" id="80e-b0-pEP"/>
+                            <constraint firstItem="KMp-Ym-u7C" firstAttribute="centerX" secondItem="nFA-NP-nys" secondAttribute="centerX" id="VbT-9w-lSX"/>
+                            <constraint firstItem="KMp-Ym-u7C" firstAttribute="top" secondItem="DeF-ho-dZd" secondAttribute="bottom" constant="74" id="ZOQ-SL-dL4"/>
+                            <constraint firstItem="nFA-NP-nys" firstAttribute="centerX" secondItem="oyH-uc-emu" secondAttribute="centerX" id="cJR-cp-uxB"/>
+                            <constraint firstItem="nFA-NP-nys" firstAttribute="centerY" secondItem="z3M-RW-jkG" secondAttribute="centerY" id="edU-PR-17p"/>
+                            <constraint firstAttribute="bottom" secondItem="oyH-uc-emu" secondAttribute="bottom" constant="20" symbolic="YES" id="pAw-uw-Ivt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHB-0s-Ri0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Gxr-qs-ZSc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1922" y="1070"/>
+        </scene>
+        <!--SixthVC-->
+        <scene sceneID="j16-s7-kRK">
+            <objects>
+                <viewController id="qsq-m4-mLR" customClass="sixthVC" customModule="Segues" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TIc-8W-7D5"/>
+                        <viewControllerLayoutGuide type="bottom" id="XOV-g8-vSf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZZc-9t-ygh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndC-Gc-iOM">
+                                <rect key="frame" x="273" y="550" width="55" height="30"/>
+                                <state key="normal" title="Tap Me!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ci7-1I-Cpg" kind="presentation" modalPresentationStyle="fullScreen" id="PUE-jE-pXP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xS-By-Exu">
+                                <rect key="frame" x="268" y="285" width="64" height="30"/>
+                                <state key="normal" title="Go Back!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZDh-Lo-vhh" kind="unwind" unwindAction="unwindSegueModal3:" id="wIU-ro-rXJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller 6" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0u-Dp-svZ">
+                                <rect key="frame" x="235" y="74" width="131" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8xS-By-Exu" firstAttribute="centerX" secondItem="ndC-Gc-iOM" secondAttribute="centerX" id="BeI-kI-vsC"/>
+                            <constraint firstItem="K0u-Dp-svZ" firstAttribute="top" secondItem="TIc-8W-7D5" secondAttribute="bottom" constant="74" id="NeH-kx-39k"/>
+                            <constraint firstAttribute="bottom" secondItem="ndC-Gc-iOM" secondAttribute="bottom" constant="20" symbolic="YES" id="aTJ-zI-cjQ"/>
+                            <constraint firstItem="8xS-By-Exu" firstAttribute="centerX" secondItem="ZZc-9t-ygh" secondAttribute="centerX" id="dsh-ZP-epT"/>
+                            <constraint firstItem="8xS-By-Exu" firstAttribute="centerY" secondItem="ZZc-9t-ygh" secondAttribute="centerY" id="rOd-5r-lHB"/>
+                            <constraint firstItem="8xS-By-Exu" firstAttribute="centerX" secondItem="K0u-Dp-svZ" secondAttribute="centerX" id="z9B-0r-fE6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0a4-IW-EIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ZDh-Lo-vhh" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2583" y="1070"/>
+        </scene>
+        <!--FifthVC-->
+        <scene sceneID="akv-KO-h5o">
+            <objects>
+                <viewController id="F8v-fg-szd" customClass="fifthVC" customModule="Segues" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pXr-xa-5WT"/>
+                        <viewControllerLayoutGuide type="bottom" id="LqF-nk-z07"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ecV-VE-Wyb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bI0-Mq-moE">
+                                <rect key="frame" x="273" y="550" width="55" height="30"/>
+                                <state key="normal" title="Tap Me!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qsq-m4-mLR" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="nrp-er-bAb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ED-Mi-skm">
+                                <rect key="frame" x="268" y="285" width="64" height="30"/>
+                                <state key="normal" title="Go Back!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HkB-8m-ahd" kind="unwind" unwindAction="unwindSegueModal2:" id="W76-lf-QG9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller 5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsa-Wr-ynC">
+                                <rect key="frame" x="235" y="74" width="131" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7ED-Mi-skm" firstAttribute="centerY" secondItem="ecV-VE-Wyb" secondAttribute="centerY" id="7RB-L5-WK5"/>
+                            <constraint firstItem="bsa-Wr-ynC" firstAttribute="centerX" secondItem="7ED-Mi-skm" secondAttribute="centerX" id="Hqu-Nc-5Lh"/>
+                            <constraint firstItem="bI0-Mq-moE" firstAttribute="centerX" secondItem="7ED-Mi-skm" secondAttribute="centerX" id="OgA-4B-npF"/>
+                            <constraint firstAttribute="bottom" secondItem="bI0-Mq-moE" secondAttribute="bottom" constant="20" symbolic="YES" id="cFn-FI-i8q"/>
+                            <constraint firstItem="bsa-Wr-ynC" firstAttribute="top" secondItem="pXr-xa-5WT" secondAttribute="bottom" constant="74" id="l6O-bK-jVq"/>
+                            <constraint firstItem="bI0-Mq-moE" firstAttribute="centerX" secondItem="ecV-VE-Wyb" secondAttribute="centerX" id="veR-bX-Hwz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rQW-eN-8v3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="HkB-8m-ahd" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3281" y="1070"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RsE-tu-eu0">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UeT-Dh-me8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ssy-sj-UfO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WUX-fn-Gck">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rrb-EQ-a1L"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="531" y="-364"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="rrb-EQ-a1L"/>
+    </inferredMetricsTieBreakers>
 </document>

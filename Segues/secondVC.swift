@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  secondVC.swift
 //  Segues
 //
 //  Created by yasha walker on 2/11/15.
@@ -8,31 +8,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class secondVC: UIViewController {
 
-    @IBOutlet weak var data: UITextField!
+    var grabIt : String?
+    
+    @IBOutlet weak var dataLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        getData()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        
-        // Create a variable
-        var test = data.text
-        
-        // Create a new variable to store the instance of PlayerTableViewController
-        let destinationVC = segue.destinationViewController as secondVC
-        destinationVC.grabIt = test
 
+    
+    @IBAction func unwindSeguePopOver(segue:UIStoryboardSegue) {
+        
+    }
+
+    func getData()
+    {
+        dataLabel.text = grabIt
     }
 
 
-
 }
-

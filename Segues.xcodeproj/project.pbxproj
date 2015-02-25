@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D38796941A9D62DB005E6206 /* seventhVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38796931A9D62DB005E6206 /* seventhVC.swift */; };
+		D3CCAE171A9C3F1E007C047C /* thirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CCAE161A9C3F1E007C047C /* thirdVC.swift */; };
+		D3CCAE191A9D5D23007C047C /* fourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CCAE181A9D5D23007C047C /* fourthVC.swift */; };
+		D3CCAE1B1A9D5D37007C047C /* fifthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CCAE1A1A9D5D37007C047C /* fifthVC.swift */; };
+		D3CCAE1D1A9D5D4F007C047C /* sixthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CCAE1C1A9D5D4F007C047C /* sixthVC.swift */; };
 		D3D7CFA61A8C49C50054478C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7CFA51A8C49C50054478C /* AppDelegate.swift */; };
 		D3D7CFA91A8C49C50054478C /* Segues.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3D7CFA71A8C49C50054478C /* Segues.xcdatamodeld */; };
 		D3D7CFAB1A8C49C50054478C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7CFAA1A8C49C50054478C /* ViewController.swift */; };
@@ -14,6 +19,7 @@
 		D3D7CFB01A8C49C60054478C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D7CFAF1A8C49C60054478C /* Images.xcassets */; };
 		D3D7CFB31A8C49C60054478C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D7CFB11A8C49C60054478C /* LaunchScreen.xib */; };
 		D3D7CFBF1A8C49C60054478C /* SeguesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7CFBE1A8C49C60054478C /* SeguesTests.swift */; };
+		D3D7CFCA1A8C4AE30054478C /* secondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7CFC91A8C4AE30054478C /* secondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D38796931A9D62DB005E6206 /* seventhVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = seventhVC.swift; sourceTree = "<group>"; };
+		D3CCAE161A9C3F1E007C047C /* thirdVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thirdVC.swift; sourceTree = "<group>"; };
+		D3CCAE181A9D5D23007C047C /* fourthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fourthVC.swift; sourceTree = "<group>"; };
+		D3CCAE1A1A9D5D37007C047C /* fifthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fifthVC.swift; sourceTree = "<group>"; };
+		D3CCAE1C1A9D5D4F007C047C /* sixthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sixthVC.swift; sourceTree = "<group>"; };
 		D3D7CFA01A8C49C50054478C /* Segues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Segues.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D7CFA41A8C49C50054478C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3D7CFA51A8C49C50054478C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +49,7 @@
 		D3D7CFB81A8C49C60054478C /* SeguesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeguesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D7CFBD1A8C49C60054478C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3D7CFBE1A8C49C60054478C /* SeguesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeguesTests.swift; sourceTree = "<group>"; };
+		D3D7CFC91A8C4AE30054478C /* secondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,12 @@
 			children = (
 				D3D7CFA51A8C49C50054478C /* AppDelegate.swift */,
 				D3D7CFAA1A8C49C50054478C /* ViewController.swift */,
+				D3D7CFC91A8C4AE30054478C /* secondVC.swift */,
+				D3CCAE161A9C3F1E007C047C /* thirdVC.swift */,
+				D3CCAE181A9D5D23007C047C /* fourthVC.swift */,
+				D3CCAE1A1A9D5D37007C047C /* fifthVC.swift */,
+				D3CCAE1C1A9D5D4F007C047C /* sixthVC.swift */,
+				D38796931A9D62DB005E6206 /* seventhVC.swift */,
 				D3D7CFAC1A8C49C50054478C /* Main.storyboard */,
 				D3D7CFAF1A8C49C60054478C /* Images.xcassets */,
 				D3D7CFB11A8C49C60054478C /* LaunchScreen.xib */,
@@ -215,8 +233,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3CCAE171A9C3F1E007C047C /* thirdVC.swift in Sources */,
+				D3CCAE1D1A9D5D4F007C047C /* sixthVC.swift in Sources */,
 				D3D7CFAB1A8C49C50054478C /* ViewController.swift in Sources */,
+				D3CCAE191A9D5D23007C047C /* fourthVC.swift in Sources */,
+				D3CCAE1B1A9D5D37007C047C /* fifthVC.swift in Sources */,
 				D3D7CFA61A8C49C50054478C /* AppDelegate.swift in Sources */,
+				D38796941A9D62DB005E6206 /* seventhVC.swift in Sources */,
+				D3D7CFCA1A8C4AE30054478C /* secondVC.swift in Sources */,
 				D3D7CFA91A8C49C50054478C /* Segues.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +435,7 @@
 				D3D7CFC41A8C49C60054478C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3D7CFC51A8C49C60054478C /* Build configuration list for PBXNativeTarget "SeguesTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +444,7 @@
 				D3D7CFC71A8C49C60054478C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
